@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Photo Submission</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='script.js' type='text/javascript'></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ </head>
+ <body>
+    <div class="container-fluid bg-primary">
+        <h2 class="text-white p-2">Image Submission</h2>
+    </div>
+    <div class="container">
+        <div class="border border-primary p-2">
+            <h5>If your image is okay, it'll be redirected to proceed further..</h5>
+            <h4>How your image should be?</h4>
+            <ol class="ml-2">
+                <li>Professionally dressed (Coat is better).</li>
+                <li>Clean shave is mandatory (For Boys).</li>
+                <li>Image must be in JPG or JPEG format.</li>
+                <li>Image Dimensions should be: 240(width) x 290(height).</li>
+                <li>File Name Format: RegNo.jpeg (1714149.jpeg)</li>
+            </ol>
+            <a align="right" href="resize.html" class="btn btn-sm btn-primary">Help in Resizing Image..!!</a>
+        </div>
+        <form class="text-center border border-primary p-2">
+            <input type="file" class="p-2 btn btn-sm btn-info" name="file" id="file" onchange="validate()"><br/>
+            <table class="table table-sm table-bordered text-center font-weight-bold">
+                <tr>
+                    <td id="imagename">File Name Format</td>
+                </tr>
+                <tr>
+                    <td id="dimension">Dimension</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+  <footer class="container-fluid bg-light font-small text-muted" style="position:bottom; bottom:0;">
+    <div class="text-center py-3">
+      &copy; 2021 Copyright:
+      <a href=""> Image Validator </a>
+      ||
+      <a href="https://www.linkedin.com/in/meiyazhagan/" target="_blank"> Meiyazhagan</a>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
+</html>
