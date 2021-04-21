@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Photo Submission</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='script.js' type='text/javascript'></script>
+    <link rel="shortcut icon" href="https://lh3.googleusercontent.com/ogw/ADGmqu9y-u-sZQDxQftIxdP575cFrpQ4XbETG5_iSayMYQ=s32-c-mo">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ </head>
+ <body>
+    <div class="container-fluid bg-primary">
+        <h2 class="text-white p-2">Image Submission</h2>
+    </div>
+    <div class="container">
+        <div class="border border-primary p-2">
+            <h4>How your image should be?</h4>
+            <ol class="ml-2">
+                <li>Professionally dressed (Coat is better).</li>
+                <li>Clean shave is mandatory (For Boys).</li>
+                <li>Image must be in <u class="font-weight-bold font-italic">JPG or JPEG</u> format.</li>
+                <li>Image DIMENSIONS should be: <u class="font-weight-bold font-italic">240(width) x 290(height)</u>.</li>
+                <li>FILE NAME Format: <u class="font-weight-bold font-italic">RegNo.jpeg (1714149.jpeg)</u></li>
+                <li><u  class="font-weight-bold font-italic">BACKGROUND must be WHITE & BLUE(2 images)</u>.</li>
+            </ol>
+            <div class=" px-3 row">
+                <a align="right" href="resize.html" class="col btn btn-sm btn-primary">Resize Image..!!</a>
+                <a align="right" href="https://www.remove.bg/" target="_blank" class="col btn btn-sm btn-warning">Change Background</a>
+            </div>
+        </div>
+        <form>
+            <div class="px-4 border border-primary">
+                <h5 class="p-2">WHITE BACKGROUND IMAGE</h5>
+                <div class="p-2 text-center">
+                    <input type="file" class="btn btn-sm btn-info" name="file" id="file" onchange="validate()" /><br/>
+                </div>
+                <table class="table table-sm table-bordered text-center font-weight-bold">
+                    <tr>
+                        <td id="imagename">File Name Format</td>
+                    </tr>
+                    <tr>
+                        <td id="dimension">Dimension</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="px-4 border border-primary">
+                <h5 class="p-2">BLUE BACKGROUND IMAGE</h5>
+                <div class="p-2 text-center">
+                    <input type="file" class="btn btn-sm btn-info" name="filea" id="filea" onchange="validatea()" /><br/>
+                </div>
+                <table class="table table-sm table-bordered text-center font-weight-bold">
+                    <tr>
+                        <td id="imagenamea">File Name Format</td>
+                    </tr>
+                    <tr>
+                        <td id="dimensiona">Dimension</td>
+                    </tr>
+                </table>
+            </div>
+            <strong class="text-warning">(If your image is okay, it'll be redirected to proceed further..)</strong>
+        </form>
+    </div>
+  <footer class="container-fluid bg-light font-small text-muted py-4" style="position:bottom; bottom:0;">
+    <div class="text-center py-3">
+      &copy; 2021 Copyright:
+      <a href=""> Image Validator </a>
+      ||
+      <a href="https://www.linkedin.com/in/meiyazhagan/" target="_blank"> Meiyazhagan</a>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
+</html>
